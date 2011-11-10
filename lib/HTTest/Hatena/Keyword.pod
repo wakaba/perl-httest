@@ -1,0 +1,51 @@
+=head1 NAME
+
+HTTest::Hatena::Keyword - A simple mock for |Hatena::Keyword|
+
+=head1 SYNOPSIS
+
+  use HTTest::Hatena::Keyword;
+  eq_or_diff scalar Hatena::Keyword->extract('Hatena'), ['Hatena'];
+
+=head1 DESCRIPTION
+
+The C<HTTest::Hatena::Keyword> module can be used as mock of
+L<Hatena::Keyword> module which is used to extract Hatena Keyword
+keywords from the given input string.  As the module is a mock, it
+generates no external HTTP access; instead, it returns the result
+based on the hard-coded mapping table
+C<$HTTest::Hatena::Keyword::BodyToKeywords>.
+
+=head1 METHODS
+
+At the time of writing the only implemented method is C<extract>.  See
+L<Hatena::Keyword> for its usage.
+
+=head1 SEE ALSO
+
+L<Hatena::Keyword> by Naoya Ito.
+
+Hatena Keyword <http://k.hatena.ne.jp/>.
+
+=head1 HISTORY
+
+=over 4
+
+=item 1.0 (2010-08-25)
+
+First version.
+
+=back
+
+=head1 AUTHOR
+
+Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>.
+
+=head1 LICENSE
+
+Copyright 2010 Hatena <http://www.hatena.ne.jp/>.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
