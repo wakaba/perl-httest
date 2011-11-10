@@ -1,0 +1,47 @@
+=head1 NAME
+
+HTTest::Mock - Lightweight mock processor for handling HTTP accesses in tests
+
+=head1 SYNOPSIS
+
+  use HTTest::Mock::Server;
+  HTTest::Mock::Server->add_handler(qr[^http://mywebapi\.test(/.*)] => sub {
+      my ($server, $req, $res) = @_;
+      $res->content_type('text/plain');
+      $res->content('path + query = ' . $1);
+  });
+
+  use HTTest::Mock;
+  LWP::UserAgent->...
+
+=head1 DESCRIPTION
+
+By C<use>ing this module, HTTP (and other protocol) accesses via
+C<LWP::UserAgent::request> methods are handled by registered HTTest
+handlers instead of remote server.  This module is particularly useful
+for writing tests of codes that access to external Web APIs.
+
+The C<add_handler> method from L<HTTest::Mock::Server> registers
+handler for HTTP requests whose request URL matches the given pattern.
+Handlers are expected to construct HTTP response object for the
+request.  Any request for an URL which no handler is registered for
+would result in a 404 error response.
+
+=head1 RESTRICTIONS
+
+In the current implementation non-L<LWP::UserAgent> Web accesses are
+not blocked.
+
+=head1 AUTHOR
+
+Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>
+nanto_vi (TOYAMA Nao) <nanto_vi@hatena.ne.jp>
+
+=head1 LICENSE
+
+Copyright 2010 Hatena <http://www.hatena.ne.jp/>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut

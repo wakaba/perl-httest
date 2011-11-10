@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<?xml-stylesheet href="/hatena/rssxsl" type="text/xsl" media="screen"?>
+
+
+<rdf:RDF
+	xmlns="http://purl.org/rss/1.0/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xml:lang="ja">
+<channel rdf:about="http://hatena.g.hatena.ne.jp/hatena/rss">
+	<title>はてなの日記</title>
+	<link>http://hatena.g.hatena.ne.jp/hatena/</link>
+	<description>はてなの日記</description>
+
+	<dc:creator>hatena</dc:creator>
+	<items>
+	<rdf:Seq>
+		<rdf:li rdf:resource="http://hatena.g.hatena.ne.jp/hatena/20101104/1288853452"/>
+		<rdf:li rdf:resource="http://hatena.g.hatena.ne.jp/hatena/20101012/1286847827"/>
+		<rdf:li rdf:resource="http://hatena.g.hatena.ne.jp/hatena/20101005/1286262384"/>
+		<rdf:li rdf:resource="http://hatena.g.hatena.ne.jp/hatena/20100930/1285788490"/>
+	</rdf:Seq>
+	</items>
+</channel>
+<item rdf:about="http://hatena.g.hatena.ne.jp/hatena/20101104/1288853452">
+	<title>はてな義援金窓口にて「奄美地方大雨災害義援金受付」を開始しました</title>
+	<link>http://hatena.g.hatena.ne.jp/hatena/20101104/1288853452</link>
+	<description> はてなポイントで皆様からの寄付を募集する「はてな義援金窓口」にて、本日より鹿児島奄美地方における大雨災害の義援金受付を始めました。 詳しくは、はてな義援金窓口のページをご</description>
+
+	<content:encoded><![CDATA[
+		<div class="section">
+			<p>はてなポイントで皆様からの寄付を募集する「はてな義援金窓口」にて、本日より鹿児島奄美地方における大雨災害の義援金受付を始めました。</p>
+			<p>詳しくは、はてな義援金窓口のページをご覧ください。皆様のご協力をお願いします。</p>
+			<p><a href="http://d.hatena.ne.jp/hatenacontrib/20101104/1288853368" target="_blank">奄美地方大雨災害義援金の受付を開始しました - はてな義援金窓口</a></p>
+		</div>
+]]></content:encoded>
+
+	<dc:creator>hatena</dc:creator>
+	<dc:date>2010-11-04T15:50:52+09:00</dc:date>
+</item>
+<item rdf:about="http://hatena.g.hatena.ne.jp/hatena/20101012/1286847827">
+	<title> mixi連携機能の認証期限が切れたときに、メールで通知するようにしました</title>
+	<link>http://hatena.g.hatena.ne.jp/hatena/20101012/1286847827</link>
+	<description> mixi連携機能の認証期限が切れたときに、メールで通知するようにしました。 これまで、mixi連携機能をご利用のユーザーの方から、「mixi連携を設定したのにmixiチェックに投稿できなくなっ</description>
+
+	<content:encoded><![CDATA[
+		<div class="section">
+			<p>mixi連携機能の認証期限が切れたときに、メールで通知するようにしました。</p>
+			<p>これまで、mixi連携機能をご利用のユーザーの方から、「mixi連携を設定したのにmixiチェックに投稿できなくなっている」というお問い合わせが数件ありました。</p>
+			<p>いつのまにかmixiチェックに投稿できなくなっている原因の一つが、mixi上の認証画面で「常に同意する」ボタンではなく、「今回は同意する」ボタンを押したため、数時間後にmixi側の認証が切れてしまうというものでした。</p>
+			<p>今回の変更では、mixi連携機能の認証期限切れをはてなが感知したとき、そのユーザーの方にメールで認証期限が切れたことをお知らせするようにしました。メールの文中にはmixi連携機能を設定するためのURLが含まれています。このURLで、再度mixi上の認証画面にアクセスしてください。</p>
+		</div>
+]]></content:encoded>
+
+	<dc:creator>hatena</dc:creator>
+	<dc:date>2010-10-12T10:43:47+09:00</dc:date>
+</item>
+<item rdf:about="http://hatena.g.hatena.ne.jp/hatena/20101005/1286262384">
+	<title>はてな利用規約の改定について</title>
+	<link>http://hatena.g.hatena.ne.jp/hatena/20101005/1286262384</link>
+	<description> 本日、はてな利用規約の改定を行いました。 この改定は、新サービス「はてなランド」の開始に伴う項目の追加と、既存サービスに関して現状のサービス運用方針に沿った規定の追加とな</description>
+
+	<content:encoded><![CDATA[
+		<div class="section">
+			<p>本日、はてな利用規約の改定を行いました。</p>
+			<p>この改定は、新サービス「はてなランド」の開始に伴う項目の追加と、既存サービスに関して現状のサービス運用方針に沿った規定の追加となります。</p>
+			<p>改定点は下記の通りです。</p>
+			<ul>
+				<li>第2条、第3条　DSiユーザーの定義の追加</li>
+				<li>第5条3 　DSiユーザーに対する連絡方法の追加</li>
+				<li>第5条7　「はてなグループ」の管理者責任の項目に、管理者の退会や連絡が取れない場合などに関する規定を追加</li>
+				<li>第6条9-3 「はてなキーワード」の禁止事項として、はてなからの注意勧告などの措置に反する行為を明示</li>
+				<li>第6条10「はてなランド」の項を追加</li>
+				<li>第9条3  サービス内で特に緊急性がある情報開示があった際、警察への通報を行う場合がある旨を明示</li>
+				<li>第9条4 「はてなランド」内の非公開メッセージの確認に関する免責を追加</li>
+				<li>連絡先メールアドレスの変更</li>
+				<li>プライバシーポリシー用途表への追加</li>
+			</ul>
+			<p>ご不明な点やご意見、ご質問などがございましたら、<a href="http://www.hatena.ne.jp/faq/q?c=10" target="_blank">お問い合わせ窓口</a>よりご連絡ください。どうぞよろしくお願いします。</p>
+		</div>
+]]></content:encoded>
+
+	<dc:creator>hatena</dc:creator>
+	<dc:date>2010-10-05T16:06:24+09:00</dc:date>
+</item>
+<item rdf:about="http://hatena.g.hatena.ne.jp/hatena/20100930/1285788490">
+	<title> 9/30 はてなトップページ障害情報</title>
+	<link>http://hatena.g.hatena.ne.jp/hatena/20100930/1285788490</link>
+	<description> 9月30日午前2時33分頃から3時59分頃まで、はてなトップページ（http://www.hatena.ne.jp/）が表示されない障害が発生いたしました。現在は復旧しております。障害原因は調査中です。 ご利用の皆</description>
+
+	<content:encoded><![CDATA[
+		<div class="section">
+			<p>9月30日午前2時33分頃から3時59分頃まで、はてなトップページ（<a href="http://www.hatena.ne.jp/" target="_blank">http://www.hatena.ne.jp/</a>）が表示されない障害が発生いたしました。現在は復旧しております。障害原因は調査中です。</p>
+			<p>ご利用の皆様にはご迷惑をおかけしまして申し訳ございませんでした。</p>
+			<h4> 4時25分 追記</h4>
+			<p>本障害は、はてなブックマークメンテナンスの影響で「いま話題」が表示できなくなっていたことが原因でした。現在ははてなダイアリーを修正し、正常に稼働しております。今後とも再発防止に努めて参ります。申し訳ございませんでした。</p>
+			<h4> 8時23分 追記</h4>
+			<p>追記文に誤りがありました。「はてなダイアリーを修正しました」は正しくは、「はてなトップページを修正しました」です。訂正してお詫び申し上げます。 </p>
+		</div>
+]]></content:encoded>
+
+	<dc:creator>hatena</dc:creator>
+	<dc:date>2010-09-30T04:28:10+09:00</dc:date>
+</item>
+</rdf:RDF>

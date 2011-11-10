@@ -1,0 +1,503 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Emacs - はてなキーワード</title>
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/opensearch/keyword.xml" title="はてなダイアリーキーワード検索">
+<link rel="stylesheet" href="/css/keyword_de.css?20100602" type="text/css" media="all" title="">
+<script type="text/javascript" src="http://www.hatena.ne.jp/js/Ten/Ten.js"></script>
+<link rel="shortcut icon" href="http://k.hatena.ne.jp/images/favicon.ico">
+
+
+<script type="text/javascript" src="/js/prototype-1.4.0.js"></script>
+
+<script type="text/javascript" src="/js/splitter.js"></script>
+<script type="text/javascript" src="/js/cookie.js"></script>
+
+<script type="text/javascript" src="/js/textinput_selection.js"></script>
+<script type="text/javascript" src="/js/diary_edit.js"></script>
+<script type="text/javascript" src="/js/color_picker.js"></script>
+<script type="text/javascript" src="/js/listbox.js"></script>
+<script type="text/javascript" src="/js/fontsize.js"></script>
+
+<script type="text/javascript" src="/js/fotouploader.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/edit_in_place.js"></script>
+<script type="text/javascript" src="/js/keyword_edit.js"></script>
+<script type="text/javascript">
+    Hatena.Diary.Visitor = 'wakabatan'
+</script>
+<link rel="stylesheet" href="/css/edit_in_place.css">
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+  Hatena.Star.SiteConfig = {
+    entryNodes: {
+      'li.hatena-star-entry': {
+        uri: 'a.hatena-star-uri',
+        title: 'a.hatena-star-title',
+        container: 'span.hatena-star-container'
+      }
+    }
+  };
+</script>
+<script type="text/javascript" src="/js/CSSChanger.js"></script>
+<script type="text/javascript" src="/js/DropDownSelector.js"></script>
+
+<script type="text/javascript">
+  if (typeof Hatena == 'undefined')
+      var Hatena = { };
+  Hatena.CSSData =  [
+          { key: '',   name: 'LightBlue'  , src: '/css/keyword_de.css'},
+          { key: 'bl', name: 'Blue'       , src: '/css/keyword_bl.css'},
+          { key: 'gr', name: 'Green'      , src: '/css/keyword_gr.css'},
+          { key: 'pi', name: 'Pink'       , src: '/css/keyword_pi.css'},
+          { key: 'mt', name: 'Monotone'   , src: '/css/keyword_mt.css'}
+      ]
+  Hatena.CSSChanger.registerFiles(Hatena.CSSData);
+  Hatena.CSSChanger.init();
+  Ten.DOM.addEventListener('DOMContentLoaded', function() {
+    new Hatena.DropDownSelector({
+        button  : document.getElementById('testbutton'),
+        onclick : function(i){Hatena.CSSChanger.change(i)},
+        data    : Hatena.CSSData,
+        selectedKey: new Ten.Cookie().get('_hatena_csschanger_name')
+    });
+  });
+</script>
+<style type="text/css">
+div.keyword-relation ul.singlelist li .timestamp {
+  display : inline;
+}
+</style>
+</head>
+<body id="hatena-keyword-keywordedit">
+  <div id="header"><a href="http://www.hatena.ne.jp/"><img src="/images/logo-hatena.gif" class="csschanger logo" alt="Hatena::" ></a><a href="/keyword/"><img src="/images/logo-keyword.gif" class="logo csschanger" alt="Keyword" ></a>
+
+
+  <form method="get" action="/search" class="searchform"><input name="word" value="Emacs" class="searchword" type="text" > <input name="submit" value="検索" class="searchbutton" type="submit" ></form>
+
+  <script type="text/javascript">Hatena.CSSChanger.replaceDefault();</script>
+
+  <ul class="menu">
+    <li class="welcome"><a href="http://k.hatena.ne.jp/wakabatan/"><img src="http://st-hatena.com/users/wa/wakabatan/profile_s.gif" class="header-profile-icon" alt="wakabatan" title="wakabatan" height="16" width="16">wakabatan</a></li>
+    <li><a href="/keyword?mode=create">キーワード作成</a></li>
+    <li><a href="http://k.hatena.ne.jp/wakabatan/favorite">お気に入り</a></li>
+    <li><a href="http://k.hatena.ne.jp/wakabatan/modified">編集履歴</a></li>
+    <li><a href="https://www.hatena.ne.jp/logout?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyword%2FEmacs%3Fkid%3D7383%26mode%3Dedit">ログアウト</a></li>
+
+    <li><a href="http://k.hatena.ne.jp/help">ヘルプ</a></li>
+    <li class="colorselecter"><img src="/images/shim.gif" id="testbutton" alt="色選択" >
+    </li>
+  </ul>
+</div>
+  <div id="breadcrumbs"><a href="/keyword/">はてなキーワード</a> &gt; <a href="/keyword/Emacs">Emacs</a> &gt; 編集</div>
+
+  <div id="container">
+    <h1>Emacs</h1>
+    <div id="body">
+      <ul class="tab">
+        <li><a href="http://k.hatena.ne.jp/keywordblog/Emacs"><img src="/images/tab_blog_off.gif" alt="ブログ" class="csschanger" ></a></li>
+        <li class="selected"><a href="/keyword/Emacs"><img src="/images/tab_keyword_on.gif" alt="キーワード" class="csschanger" ></a></li>
+      </ul>
+
+      <!-- 編集できないユーザー向け -->
+
+
+      <!-- ここから編集 --> 
+
+
+      <div class="keyword-container">
+        <form method="post" action="/keyword" enctype="multipart/form-data" name="edit">
+          <input type="hidden" name="mode" value="enter">
+          <input type="hidden" name="rkm" value="KfOpJEOoI6ZIlBYcLENwnA">
+          <input type="hidden" name="word" value="Emacs">
+          <input type="hidden" name="kid" value="7383">
+          <input type="hidden" name="modified" value="2010-02-20 03:42:49">
+
+          
+
+<h2>
+<span class="furigana">ふりがな</span>
+<input value="いーまっくす" name="furigana" class="text" type="text" size="30">
+<select name="cname">
+<option value="">一般</option>
+<option value="book">読書</option>
+<option value="music">音楽</option>
+<option value="movie">映画</option>
+<option value="web">ウェブ</option>
+<option value="elec" selected="selected">コンピュータ</option>
+
+<option value="animal">動植物</option>
+<option value="tv">テレビ</option>
+<option value="anime">アニメ</option>
+<option value="food">食</option>
+<option value="sports">スポーツ</option>
+<option value="game">ゲーム</option>
+<option value="comic">マンガ</option>
+<option value="idol">アイドル</option>
+<option value="society">社会</option>
+
+<option value="geography">地理</option>
+<option value="art">アート</option>
+<option value="science">サイエンス</option>
+<option value="hatena">はてな</option>
+<option value="club">はてなダイアリークラブ</option>
+<option value="deleted">削除予定キーワード</option>
+</select>
+
+<span id="category-change-comment-message" class="attention" style="display:none;">
+※変更理由の入力が必須です。<a href="#reason" class="pagelink">変更理由記入欄</a>にお書きください。
+
+</span>
+</h2>
+<!-- 入力支援 -->
+<div class="edit-buttons">
+<span class="note" style="float:right;"><a href="http://hatenadiary.g.hatena.ne.jp/keyword/%e3%81%af%e3%81%a6%e3%81%aa%e8%a8%98%e6%b3%95%e4%b8%80%e8%a6%a7" target="_blank" style="color:#999;line-height:1.9;margin-right:5px;">はてな記法一覧</a></span>
+<img src="/images/markup_bold.gif" alt="太字" title="太字" style="border-left: 1px solid rgb(221, 221, 221); margin-left: 3px;" onmousedown="markupBold(); return false;"><img src="/images/markup_size.gif" alt="文字サイズ" onmousedown="FontSizeSelection.onFirstClick(event)"><img src="/images/markup_em.gif" alt="斜体" onmousedown="markupItalic(); return false;"><img src="/images/markup_del.gif" alt="打ち消し" onmousedown="markupHtml('del'); return false;"><img src="/images/markup_color.gif" alt="色" id="color_button" onmousedown="onColorButtonClick(event); return false;"><img src="/images/markup_url.gif" alt="リンク" style="border-left: 1px solid rgb(221, 221, 221); margin-left: 6px;" onmousedown="markupURL(); return false;"><img src="/images/markup_keyword.gif" alt="キーワード" onmousedown="markup('[[', ']]'); return false;"><img id="insert-asin" src="/images/btn-asin.gif"  onclick="javascript:window.open('/wakabatan/hamazou/','_blank','width=450,height=600,resizable=1,scrollbars=1,status=1');return false;" style="margin-left:6px;border-left:1px solid #ddd;"><img id="insert-movie" src="/images/btn-movie.gif" onclick="javascript:window.open('/wakabatan/videoki/','_blank','width=450,height=600,resizable=1,scrollbars=1,status=1');return false;">
+</div>
+
+<!-- キーワード本体 -->
+<div class="keyword-body">
+  <textarea name="body" rows="30" id="textarea-edit">多数の中毒者を持つエディタ。当初はMultics用エディタのマクロの寄せ集めということで、「Editor macros」から名付けられた。
+viを使っている人からは独特のキーバインドからか「指が攣るエディタ」と呼ばれることもある。それでも多くのテキストエディタでEmacs風のキーバインドがサポートされているのも事実である。とくに、Mac OS XのCocoa APIによるテキストエンジン「NSTextView」では開発者が手を加えることなくEmacsの一部のキーバインドが使えるようになっている。
+
+Emacsの略は操作性を批判して「Escape Meta Alt Control Shift」と言われることもあり、仕様の巨大さを批判して「Eight Megabytes And Constantly Swapping」((8MBでいつもswapしている))、
+「Eventually malloc()s All Computer Storage」((最終的にはコンピュータの記憶領域すべてをmalloc()する))、「Emacs Makes A Computer Slow」((Emacsはコンピュータを遅くする))などと言われることもある。
+だが、最近の電子計算機の性能向上に伴い、処理速度についてはそれほど問題はなくなってきている((Athlon 1.2GHzで一瞬で起動する))。
+
+拡張性が高く、単なるエディターというよりは、一種の「環境」とも言えるかもしれない。
+拡張にはELisp（[[Emacs Lisp]]）と呼ばれる言語((Lispではあるが再帰ではなく反復で書く。Common Lispの機能をエミュレートしたパッケージclがある。))を用いる。Emacsの大部分の機能（カーソル移動など、基本的な部分も含まれる）がこのELispにより実装されている。
+
+モードという概念がない分vi系統よりは取っつきやすい。
+
+Emacsのノウハウやelispを収集したければ、まずEmacsWikiに行けばいい。wikiなのでノウハウを持っている人はどんどん追記してほしい。elisp開発者はEmacsWikiにアップロードすれば世界中の人への宣伝になる。
+
+関連語 [[vi]]、[[Meadow]]、[[Mew]]</textarea>
+  <div id="spritter" class="spritter"></div>
+    <script type="text/javascript"><!--
+    if (window.Splitter) {
+        new Splitter('spritter',
+                     'textarea-edit',
+                     100);
+    }
+    //-->
+    </script>
+
+</div>
+
+<p class="note" style="color:#000;margin:6px 0 12px 0">※「*」で始まる行は見出しに、「-」や「+」で始まる行はリストになります → <a href="http://hatenadiary.g.hatena.ne.jp/keyword/%e3%81%af%e3%81%a6%e3%81%aa%e8%a8%98%e6%b3%95%e4%b8%80%e8%a6%a7" target="_blank" class="out">はてな記法一覧</a>
+
+</p>
+
+<table class="config">
+<tbody>
+<tr>
+<td rowspan="2" style="vertical-align:top;">
+<div style="padding:4px;border-bottom:1px solid #f1eed2;">
+        <select name="optionparam">
+                <option value="0">▼</option>
+
+                <option selected="selected">URL</option>
+                <option>住所</option>
+                <option>電話番号</option>
+                <option>営業時間</option>
+                <option>価格</option>
+                <option>メーカー</option>
+
+                <option>作者</option>
+                <option>年</option>
+        </select>
+<input value="http://www.gnu.org/software/emacs/emacs.html" name="optionvalue" type="text" size="40">
+</div>
+<div style="padding:4px;border-bottom:1px solid #f1eed2;">
+        <select name="optionparam">
+                <option value="0">▼</option>
+                <option selected="selected">URL</option>
+
+                <option>住所</option>
+                <option>電話番号</option>
+                <option>営業時間</option>
+                <option>価格</option>
+                <option>メーカー</option>
+                <option>作者</option>
+
+                <option>年</option>
+        </select>
+<input value="http://www.emacswiki.org/" name="optionvalue" type="text" size="40">
+</div>
+<div style="padding:4px;border-bottom:1px solid #f1eed2;">
+        <select name="optionparam">
+                <option value="0" selected>▼</option>
+                <option>URL</option>
+                <option>住所</option>
+
+                <option>電話番号</option>
+                <option>営業時間</option>
+                <option>価格</option>
+                <option>メーカー</option>
+                <option>作者</option>
+                <option>年</option>
+
+        </select>
+<input type="text" name="optionvalue" size="40">
+</div>
+<div style="padding:4px;border-bottom:1px solid #f1eed2;">
+        <select name="optionparam">
+                <option value="0" selected>▼</option>
+                <option>URL</option>
+                <option>住所</option>
+                <option>電話番号</option>
+
+                <option>営業時間</option>
+                <option>価格</option>
+                <option>メーカー</option>
+                <option>作者</option>
+                <option>年</option>
+        </select>
+
+<input type="text" name="optionvalue" size="40">
+</div>
+
+</td>
+<th style="width:12%;">画像</th><td style="vertical-align:top;">
+
+
+
+
+
+    <label for="image">画像を追加：</label>
+
+<input type="file" name="image" size="30"><br>
+<span class="note">※JPEG,GIF,PNG,BMP画像を登録できます。</span>
+
+</td></tr>
+<tr><th>地図</th><td style="vertical-align:top;">
+緯度：<input name="latitude" type="text" size="30" value="" class="text" ><br >
+経度：<input name="longitude" type="text" size="30" value="" class="text" ><br >
+<input type="button"  onclick="javascript:window.open('http://map.hatena.ne.jp/point?redirecturl=http%3A%2F%2Fd%2Ehatena%2Ene%2Ejp%2Fmap','_blank','width=450,height=600,resizable=1,scrollbars=1,status=1');return false;"  value="地図から入力する">
+</td></tr>
+</tbody></table>
+<p class="note box-l" style="color:#000;margin:0">
+※他のホームページや辞書の内容をそのまま転載するなど、他人の著作権や肖像権を侵害する行為は行わないでください。<br>
+※キーワードの作成および編集にあたっては<a href="http://hatena.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%83%BB%E7%B7%A8%E9%9B%86%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3" target="_blank">はてなキーワード作成・編集ガイドライン</a>をご一読ください。
+
+</p>
+
+<script type="text/javascript">
+Event.observe( window, 'load', function(){
+        var target_form = document.forms['edit'].cname;
+        var init_value = target_form.value;
+        Event.observe( target_form, 'change', function(){
+                if ( ( init_value == 'deleted' && target_form.value != 'deleted' )
+                     || ( init_value != 'deleted' && target_form.value == 'deleted' ) ) {
+                    Element.show('category-change-comment');
+                    Element.show('category-change-comment-message');
+                }
+                else {
+                    Element.hide('category-change-comment');
+                    Element.hide('category-change-comment-message');
+                }
+            });
+    });
+</script>
+
+<div id="category-change-comment" style="display:none" class="error">
+<table class="config">
+<th><a name="reason">変更理由記入欄</a></th><td>wakabatan <input type="text" name="change_category_comment" value="" size="60" class="text" ></td>
+</table>
+</div>
+
+<noscript>
+<table class="config">
+<th><a name="reason">変更理由記入欄</a></th><td>wakabatan <input type="text" name="change_category_comment_noscript" value="" size="60" class="text" ></td>
+</table>
+</noscript>
+
+<div class="send-button">
+
+<input type="submit" name="preview" value="プレビュー" class="button">
+<input type="submit" value="保存する" class="button">
+<label for="trivial"><input type="checkbox" id="trivial" name="trivial" value="1">ちょっとした更新</label>
+
+</div>
+</form>
+</div>
+
+
+
+<form method="post" action="/keyword#c">
+<input type="hidden" name="mode" value="commententer">
+<input type="hidden" name="rkm" value="KfOpJEOoI6ZIlBYcLENwnA">
+<input type="hidden" name="kid" value="7383">
+<input type="hidden" name="word" value="Emacs">
+
+<div class="keyword-relation keyword-comment">
+<h2><a name="c">コメントを書く</a></h2>
+<ul class="singlelist">
+
+
+
+
+<li><span class="commentator"><img src="http://www.hatena.ne.jp/users/El/Elim/profile_s.gif" class="hatena-id-icon" alt="Elim" title="Elim" height="16" width="16"><a href="http://k.hatena.ne.jp/Elim/">Elim</a></span> 
+<span class="timestamp">2004/01/31 23:12</span>
+<span class="commentbody">Emacs は環境なのです。</span></li>
+
+<li><span class="commentator"><img src="http://www.hatena.ne.jp/users/ha/havanaclub/profile_s.gif" class="hatena-id-icon" alt="havanaclub" title="havanaclub" height="16" width="16"><a href="http://k.hatena.ne.jp/havanaclub/">havanaclub</a></span> 
+
+<span class="timestamp">2004/04/02 20:50</span>
+<span class="commentbody">Emacs Makes A Computer Slow</span></li>
+
+<li><span class="commentator"><img src="http://www.hatena.ne.jp/users/ru/rubikitch/profile_s.gif" class="hatena-id-icon" alt="rubikitch" title="rubikitch" height="16" width="16"><a href="http://k.hatena.ne.jp/rubikitch/">rubikitch</a></span> 
+<span class="timestamp">2007/07/16 01:39</span>
+<span class="commentbody">elispについて追記。</span></li>
+
+<li><span class="commentator"><img src="http://www.hatena.ne.jp/users/ru/rubikitch/profile_s.gif" class="hatena-id-icon" alt="rubikitch" title="rubikitch" height="16" width="16"><a href="http://k.hatena.ne.jp/rubikitch/">rubikitch</a></span> 
+<span class="timestamp">2007/10/27 17:52</span>
+<span class="commentbody">EmacsWikiについて。</span></li>
+
+
+<li><span class="commentator"><img src="http://www.hatena.ne.jp/users/wa/wakabatan/profile_s.gif" class="hatena-id-icon" alt="wakabatan" title="wakabatan" height="16" width="16">wakabatan</span>
+<input name="commentbody" value="" size="60"> <input type="submit" value="投稿"></li>
+
+
+</ul>
+</div>
+
+</form>
+
+
+
+<div class="keyword-relation">
+<a name="history"></a>
+
+<h2>編集履歴</h2>
+<ul class="singlelist">
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1148768" class="hatena-star-uri hatena-star-title">Emacs@20100220034256</a><span class="timestamp"> (2010/02/20 03:42:56)</span><a href="http://k.hatena.ne.jp/AtelierDeMuguet/" class="username"><img src="http://st-hatena.com/users/At/AtelierDeMuguet/profile_s.gif" alt="AtelierDeMuguet" title="AtelierDeMuguet" class="icon" ></a><a href="http://k.hatena.ne.jp/AtelierDeMuguet/" class="hatena-star-author username">AtelierDeMuguet</a> 15c15 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121348" class="hatena-star-uri hatena-star-title">Emacs@20091027171140</a><span class="timestamp"> (2009/10/27 17:11:40)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 15c15 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121347" class="hatena-star-uri hatena-star-title">Emacs@20091027171049</a><span class="timestamp"> (2009/10/27 17:10:49)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 15c15 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121346" class="hatena-star-uri hatena-star-title">Emacs@20091027170948</a><span class="timestamp"> (2009/10/27 17:09:48)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 15c15 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121345" class="hatena-star-uri hatena-star-title">Emacs@20091027170921</a><span class="timestamp"> (2009/10/27 17:09:21)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 15c15 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121343" class="hatena-star-uri hatena-star-title">Emacs@20091027170837</a><span class="timestamp"> (2009/10/27 17:08:37)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 15c15 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121342" class="hatena-star-uri hatena-star-title">Emacs@20091027170559</a><span class="timestamp"> (2009/10/27 17:05:59)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 13c13,15 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121333" class="hatena-star-uri hatena-star-title">Emacs@20091027165019</a><span class="timestamp"> (2009/10/27 16:50:19)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 13,16c13 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121332" class="hatena-star-uri hatena-star-title">Emacs@20091027164930</a><span class="timestamp"> (2009/10/27 16:49:30)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 13a14,16 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121331" class="hatena-star-uri hatena-star-title">Emacs@20091027164857</a><span class="timestamp"> (2009/10/27 16:48:57)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 13c13 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121328" class="hatena-star-uri hatena-star-title">Emacs@20091027164528</a><span class="timestamp"> (2009/10/27 16:45:28)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 13,14c13 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1121327" class="hatena-star-uri hatena-star-title">Emacs@20091027163940</a><span class="timestamp"> (2009/10/27 16:39:40)</span><a href="http://k.hatena.ne.jp/yaotti/" class="username"><img src="http://st-hatena.com/users/ya/yaotti/profile_s.gif" alt="yaotti" title="yaotti" class="icon" ></a><a href="http://k.hatena.ne.jp/yaotti/" class="hatena-star-author username">yaotti</a> 13c13,14 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1032548" class="hatena-star-uri hatena-star-title">Emacs@20081126221500</a><span class="timestamp"> (2008/11/26 22:15:00)</span><a href="http://k.hatena.ne.jp/antipop/" class="username"><img src="http://st-hatena.com/users/an/antipop/profile_s.gif" alt="antipop" title="antipop" class="icon" ></a><a href="http://k.hatena.ne.jp/antipop/" class="hatena-star-author username">antipop</a> 13c13 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1012747" class="hatena-star-uri hatena-star-title">Emacs@20080924183309</a><span class="timestamp"> (2008/09/24 18:33:09)</span><a href="http://k.hatena.ne.jp/xnissy/" class="username"><img src="http://st-hatena.com/users/xn/xnissy/profile_s.gif" alt="xnissy" title="xnissy" class="icon" ></a><a href="http://k.hatena.ne.jp/xnissy/" class="hatena-star-author username">xnissy</a> edit<span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1012699" class="hatena-star-uri hatena-star-title">Emacs@20080924145103</a><span class="timestamp"> (2008/09/24 14:51:03)</span><a href="http://k.hatena.ne.jp/antipop/" class="username"><img src="http://st-hatena.com/users/an/antipop/profile_s.gif" alt="antipop" title="antipop" class="icon" ></a><a href="http://k.hatena.ne.jp/antipop/" class="hatena-star-author username">antipop</a> edit<span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=1005606" class="hatena-star-uri hatena-star-title">Emacs@20080905150422</a><span class="timestamp"> (2008/09/05 15:04:22)</span><a href="http://k.hatena.ne.jp/antipop/" class="username"><img src="http://st-hatena.com/users/an/antipop/profile_s.gif" alt="antipop" title="antipop" class="icon" ></a><a href="http://k.hatena.ne.jp/antipop/" class="hatena-star-author username">antipop</a> edit<span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=919626" class="hatena-star-uri hatena-star-title">Emacs@20071027175200</a><span class="timestamp"> (2007/10/27 17:52:00)</span><a href="http://k.hatena.ne.jp/rubikitch/" class="username"><img src="http://st-hatena.com/users/ru/rubikitch/profile_s.gif" alt="rubikitch" title="rubikitch" class="icon" ></a><a href="http://k.hatena.ne.jp/rubikitch/" class="hatena-star-author username">rubikitch</a> 11c11,13 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=889217" class="hatena-star-uri hatena-star-title">Emacs@20070716013912</a><span class="timestamp"> (2007/07/16 01:39:12)</span><a href="http://k.hatena.ne.jp/rubikitch/" class="username"><img src="http://st-hatena.com/users/ru/rubikitch/profile_s.gif" alt="rubikitch" title="rubikitch" class="icon" ></a><a href="http://k.hatena.ne.jp/rubikitch/" class="hatena-star-author username">rubikitch</a> 9c9 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=563825" class="hatena-star-uri hatena-star-title">Emacs@20051007032215</a><span class="timestamp"> (2005/10/07 03:22:15)</span><a href="http://k.hatena.ne.jp/fujiedaharukaze/" class="username"><img src="http://st-hatena.com/users/fu/fujiedaharukaze/profile_s.gif" alt="fujiedaharukaze" title="fujiedaharukaze" class="icon" ></a><a href="http://k.hatena.ne.jp/fujiedaharukaze/" class="hatena-star-author username">fujiedaharukaze</a> 1,2c1,2 8c8,11 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=499447" class="hatena-star-uri hatena-star-title">Emacs@20050716031741</a><span class="timestamp"> (2005/07/16 03:17:41)</span><a href="http://k.hatena.ne.jp/kyrina/" class="username"><img src="http://st-hatena.com/users/ky/kyrina/profile_s.gif" alt="kyrina" title="kyrina" class="icon" ></a><a href="http://k.hatena.ne.jp/kyrina/" class="hatena-star-author username">kyrina</a> 6c6,8 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=182932" class="hatena-star-uri hatena-star-title">Emacs@20040510163359</a><span class="timestamp"> (2004/05/10 16:33:59)</span><a href="http://k.hatena.ne.jp/athlon/" class="username"><img src="http://st-hatena.com/users/at/athlon/profile_s.gif" alt="athlon" title="athlon" class="icon" ></a><a href="http://k.hatena.ne.jp/athlon/" class="hatena-star-author username">athlon</a> 2,3c2 5c4,6 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=182930" class="hatena-star-uri hatena-star-title">Emacs@20040510163221</a><span class="timestamp"> (2004/05/10 16:32:21)</span><a href="http://k.hatena.ne.jp/athlon/" class="username"><img src="http://st-hatena.com/users/at/athlon/profile_s.gif" alt="athlon" title="athlon" class="icon" ></a><a href="http://k.hatena.ne.jp/athlon/" class="hatena-star-author username">athlon</a> 5c5 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=135602" class="hatena-star-uri hatena-star-title">Emacs@20040201212550</a><span class="timestamp"> (2004/02/01 21:25:50)</span><a href="http://k.hatena.ne.jp/athlon/" class="username"><img src="http://st-hatena.com/users/at/athlon/profile_s.gif" alt="athlon" title="athlon" class="icon" ></a><a href="http://k.hatena.ne.jp/athlon/" class="hatena-star-author username">athlon</a> 3c3,5 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=135600" class="hatena-star-uri hatena-star-title">Emacs@20040201212252</a><span class="timestamp"> (2004/02/01 21:22:52)</span><a href="http://k.hatena.ne.jp/athlon/" class="username"><img src="http://st-hatena.com/users/at/athlon/profile_s.gif" alt="athlon" title="athlon" class="icon" ></a><a href="http://k.hatena.ne.jp/athlon/" class="hatena-star-author username">athlon</a> 1c1,3 <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=113679" class="hatena-star-uri hatena-star-title">Emacs@20031213101930</a><span class="timestamp"> (2003/12/13 10:19:30)</span><a href="http://k.hatena.ne.jp/tokuhirom/" class="username"><img src="http://st-hatena.com/users/to/tokuhirom/profile_s.gif" alt="tokuhirom" title="tokuhirom" class="icon" ></a><a href="http://k.hatena.ne.jp/tokuhirom/" class="hatena-star-author username">tokuhirom</a> edit<span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=78067" class="hatena-star-uri hatena-star-title">Emacs@20030826200845</a><span class="timestamp"> (2003/08/26 20:08:45)</span><a href="http://k.hatena.ne.jp/mjq/" class="username"><img src="http://st-hatena.com/users/mj/mjq/profile_s.gif" alt="mjq" title="mjq" class="icon" ></a><a href="http://k.hatena.ne.jp/mjq/" class="hatena-star-author username">mjq</a> 0a1 change category to コンピュータ <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=34671" class="hatena-star-uri hatena-star-title">Emacs@20030517020151</a><span class="timestamp"> (2003/05/17 02:01:51)</span><a href="http://k.hatena.ne.jp/ys_y/" class="username"><img src="http://st-hatena.com/users/ys/ys_y/profile_s.gif" alt="ys_y" title="ys_y" class="icon" ></a><a href="http://k.hatena.ne.jp/ys_y/" class="hatena-star-author username">ys_y</a> change parent to エディタ <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=34663" class="hatena-star-uri hatena-star-title">Emacs@20030517015941</a><span class="timestamp"> (2003/05/17 01:59:41)</span><a href="http://k.hatena.ne.jp/ys_y/" class="username"><img src="http://st-hatena.com/users/ys/ys_y/profile_s.gif" alt="ys_y" title="ys_y" class="icon" ></a><a href="http://k.hatena.ne.jp/ys_y/" class="hatena-star-author username">ys_y</a> change parent to ソフトウェア <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=34661" class="hatena-star-uri hatena-star-title">Emacs@20030517015932</a><span class="timestamp"> (2003/05/17 01:59:32)</span><a href="http://k.hatena.ne.jp/ys_y/" class="username"><img src="http://st-hatena.com/users/ys/ys_y/profile_s.gif" alt="ys_y" title="ys_y" class="icon" ></a><a href="http://k.hatena.ne.jp/ys_y/" class="hatena-star-author username">ys_y</a> change parent to はてなダイアリーキーワード <span class="hatena-star-container"></span></li>
+
+<li class="hatena-star-entry"><a href="/keywordlog?klid=34660" class="hatena-star-uri hatena-star-title">Emacs@20030517015922</a><span class="timestamp"> (2003/05/17 01:59:22)</span><a href="http://k.hatena.ne.jp/ys_y/" class="username"><img src="http://st-hatena.com/users/ys/ys_y/profile_s.gif" alt="ys_y" title="ys_y" class="icon" ></a><a href="http://k.hatena.ne.jp/ys_y/" class="hatena-star-author username">ys_y</a> append<span class="hatena-star-container"></span></li>
+
+</ul>
+</div>
+
+
+
+<!--
+<div class="info">
+<h2>「Emacs」へのトラックバック (5) - <form class="inline"><input type="text" value="http://d.hatena.ne.jp/keyword/Emacs" onfocus="this.select()" class="field"></form></h2>
+
+<form method="post" action="/keyword#tb">
+<input type="hidden" name="mode" value="deletetrackback">
+<input type="hidden" name="rkm" value="KfOpJEOoI6ZIlBYcLENwnA">
+<input type="hidden" name="word" value="Emacs">
+<ul>
+
+<li><input type="checkbox" name="url" value="http://yaotti.g.hatena.ne.jp/keyword/Emacs?kid=15">2008-11-05 16:55:35 <a href="http://yaotti.g.hatena.ne.jp/keyword/Emacs?kid=15">はてなグループ - yaottiグループ - Emacs</a></li>
+<li><input type="checkbox" name="url" value="http://moti.g.hatena.ne.jp/keyword/emacs?kid=63">2008-08-31 21:37:04 <a href="http://moti.g.hatena.ne.jp/keyword/emacs?kid=63">はてなグループ - moti.g - emacs</a></li>
+<li><input type="checkbox" name="url" value="http://fragments.g.hatena.ne.jp/samurai20000/20060117#1137497695">2006-01-17 20:56:12 <a href="http://fragments.g.hatena.ne.jp/samurai20000/20060117#1137497695">[emacs]ファイルの再読み込みって？</a></li>
+<li><input type="checkbox" name="url" value="http://subtech.g.hatena.ne.jp/keyword/Emacs?kid=37">2005-10-26 00:03:09 <a href="http://subtech.g.hatena.ne.jp/keyword/Emacs?kid=37">はてなグループ - subtechグループ - Emacs</a></li>
+<li><input type="checkbox" name="url" value="http://tech.g.hatena.ne.jp/keyword/Emacs?kid=3">2005-07-18 17:37:44 <a href="http://tech.g.hatena.ne.jp/keyword/Emacs?kid=3">はてなグループ - 技術日記 - Emacs</a></li>
+</ul>
+<input type="submit" value="トラックバックを削除する">
+</form>
+
+-->
+        
+</div>
+<div id="footer-menu">
+
+  <ul>
+    <li><a href="/keyword/">トップ</a></li>
+    <li><a href="/hotkeyword">注目キーワード一覧</a></li>
+    <li><a href="/hotasin">注目商品一覧</a></li>
+    <li><a href="/gourmet">レストラン一覧</a> <img src="/images/icon-new.gif" alt="new" title="new " /></li>
+    <li><a href="/calendar">カレンダー</a></li>
+
+    <li><a href="/hatenakeyword/">機能変更・お知らせ</a></li>
+    <li><a href="http://k.hatena.ne.jp/help">ヘルプ</a></li>
+  </ul>
+</div>
+<div id="footer">
+Copyright (C) 2001-2010 hatena. All Rights Reserved.
+</div>
+
+</div><!-- body -->
+</div><!-- container -->
+
+<!-- 10.0.54.14 -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var firstTracker = _gat._getTracker("UA-441387-2");
+firstTracker._initData();
+firstTracker._trackPageview();
+var secondTracker = _gat._getTracker("UA-7855606-1");
+secondTracker._setDomainName(".hatena.ne.jp");
+secondTracker._initData();
+secondTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

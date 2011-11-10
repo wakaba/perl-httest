@@ -1,0 +1,16 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>data:text/plain,This%20is%20a%20test%20Atom%20feed.</id>
+  <title>これは Atom フィードです。</title>
+  <link rel="self" type="application/atom+xml" href="http://www.example.com/atom"/>
+  <link rel="alternate" type="text/plain" href="http://www.example.com/html"/>
+  <updated>2005-04-04T03:02:11Z</updated>
+
+  <entry>
+    <id>data:text/plain,This%20is%20a%20test%20Atom%20entry.</id>
+    <title>これは Atom エントリーです。</title>
+    <updated>2005-04-04T03:02:13Z</updated>
+    <author>
+      <name>著者です。</name>
+    </author>
+  </entry>
+</feed>

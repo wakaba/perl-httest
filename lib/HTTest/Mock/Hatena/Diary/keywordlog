@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript"><title>Emacs@20080924145103 - はてなキーワード</title><link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/opensearch/keyword.xml" title="はてなダイアリーキーワード検索">
+<link rel="stylesheet" href="/css/keyword_de.css?20100602" type="text/css" media="all" title="">
+<script type="text/javascript" src="http://www.hatena.ne.jp/js/Ten/Ten.js"></script>
+<link rel="shortcut icon" href="http://k.hatena.ne.jp/images/favicon.ico">
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+  Hatena.Star.SiteConfig = {
+    entryNodes: {
+      'div#container': {
+        uri: 'window.location',
+        title: 'h1.hatena-star-title',
+        container: 'h1.hatena-star-container'
+      }
+    }
+  };
+</script><script type="text/javascript" src="/js/CSSChanger.js"></script>
+<script type="text/javascript" src="/js/DropDownSelector.js"></script>
+<script type="text/javascript">
+  if (typeof Hatena == 'undefined')
+      var Hatena = { };
+  Hatena.CSSData =  [
+          { key: '',   name: 'LightBlue'  , src: '/css/keyword_de.css'},
+          { key: 'bl', name: 'Blue'       , src: '/css/keyword_bl.css'},
+          { key: 'gr', name: 'Green'      , src: '/css/keyword_gr.css'},
+          { key: 'pi', name: 'Pink'       , src: '/css/keyword_pi.css'},
+          { key: 'mt', name: 'Monotone'   , src: '/css/keyword_mt.css'}
+      ]
+  Hatena.CSSChanger.registerFiles(Hatena.CSSData);
+  Hatena.CSSChanger.init();
+  Ten.DOM.addEventListener('DOMContentLoaded', function() {
+    new Hatena.DropDownSelector({
+        button  : document.getElementById('testbutton'),
+        onclick : function(i){Hatena.CSSChanger.change(i)},
+        data    : Hatena.CSSData,
+        selectedKey: new Ten.Cookie().get('_hatena_csschanger_name')
+    });
+  });
+</script>
+</head>
+<body>
+<div id="header"><a href="http://www.hatena.ne.jp/"><img src="/images/logo-hatena.gif" class="csschanger logo" alt="Hatena::" ></a><a href="/keyword/"><img src="/images/logo-keyword.gif" class="logo csschanger" alt="Keyword" ></a>
+
+  <form method="get" action="/search" class="searchform"><input name="word" value="" class="searchword" type="text" > <input name="submit" value="検索" class="searchbutton" type="submit" ></form>
+  <script type="text/javascript">Hatena.CSSChanger.replaceDefault();</script>
+  <ul class="menu">    <li class="welcome">ようこそゲストさん</li>
+    <li><a href="https://www.hatena.ne.jp/register?location=http://d.hatena.ne.jp/">ユーザー登録</a></li>
+    <li><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Fkeywordlog%3Fklid%3D1012699">ログイン</a></li>    <li><a href="http://k.hatena.ne.jp/help">ヘルプ</a></li>
+    <li class="colorselecter"><img src="/images/shim.gif" id="testbutton" alt="色選択" >
+    </li>
+  </ul>
+</div>
+
+<div id="breadcrumbs"><a href="/">はてなキーワード</a> &gt; <a href="/keyword/Emacs">Emacs</a> &gt; <a href="/keyword/Emacs?kid=7383&amp;mode=edit">編集</a> &gt; @20080924145103</div>
+<div id="container">
+<h1 class="hatena-star-title hatena-star-container">Emacs@20080924145103</h1>
+<div id="body">
+      <ul class="tab">
+        <li><a href="http://k.hatena.ne.jp/keywordblog/"><img src="/images/tab_blog_off.gif" alt="ブログ" class="csschanger" /></a></li>
+        <li class="selected"><a href="/keyword/"><img src="/images/tab_keyword_on.gif" alt="キーワード" class="csschanger" /></a></li>
+      </ul>
+
+<div class="keyword-container">
+<h2><a href="/keyword/Emacs">Emacs</a></h2>
+<div class="keyword-body">
+<textarea name="body" cols="80" rows="20">多数の中毒者を持つエディタ。当初はMultics用エディタのマクロの寄せ集めということで、「Editor macros」から名付けられた。
+viを使っている人からは独特のキーバインドからか「指が攣るエディタ」と呼ばれることもある。それでも多くのテキストエディタでEmacs風のキーバインドがサポートされているのも事実である。とくに、Mac OS XのCocoa APIによるテキストエンジン「NSTextView」では開発者が手を加えることなくEmacsの一部のキーバインドが使えるようになっている。
+
+Emacsの略は操作性を批判して「Escape Meta Alt Control Shift」と言われることもあり、仕様の巨大さを批判して「Eight Megabytes And Constantly Swapping」((8MBでいつもswapしている))、
+「Eventually malloc()s All Computer Storage」((最終的にはコンピュータの記憶領域すべてをmalloc()する))、「Emacs Makes A Computer Slow」((Emacsはコンピュータを遅くする))などと言われることもある。
+だが、最近の電子計算機の性能向上に伴い、処理速度についてはそれほど問題はなくなってきている((Athlon 1.2GHzで一瞬で起動する))。
+
+拡張性が高く、単なるエディターというよりは、一種の「環境」とも言えるかもしれない。
+拡張にはELisp（[[Emacs Lisp]]）と呼ばれる言語((Lispではあるが再帰ではなく反復で書く。Common Lispの機能をエミュレートしたパッケージclがある。))を用いる。Emacsの大部分の機能（カーソル移動など、基本的な部分も含まれる）がこのELispにより実装されている。
+
+モードという概念がない分vi系統よりは取っつきやすい。
+
+Emacsのノウハウやelispを収集したければ、まずEmacsWikiに行けばいい。wikiなのでノウハウを持っている人はどんどん追記してほしい。elisp開発者はEmacsWikiにアップロードすれば世界中の人への宣伝になる。
+</textarea>
+<dl class="keyword-log-info">
+<dt>編集時刻：</dt><dd><span class="timestamp">2008/09/24 14:51:03</span></dd>
+<dt>編集者：</dt><dd><a href="http://k.hatena.ne.jp/antipop/" class="hatena-star-author username">antipop</a></dd>
+<dt>編集内容：</dt><dd>edit<br>
+
+</dd>
+</dl>
+</div>
+</div>
+<div id="footer-menu">
+  <ul>
+    <li><a href="/keyword/">トップ</a></li>
+    <li><a href="/hotkeyword">注目キーワード一覧</a></li>
+    <li><a href="/hotasin">注目商品一覧</a></li>
+    <li><a href="/gourmet">レストラン一覧</a> <img src="/images/icon-new.gif" alt="new" title="new " /></li>
+    <li><a href="/calendar">カレンダー</a></li>
+    <li><a href="/hatenakeyword/">機能変更・お知らせ</a></li>
+    <li><a href="http://k.hatena.ne.jp/help">ヘルプ</a></li>
+  </ul>
+</div>
+<div id="footer">
+Copyright (C) 2001-2010 hatena. All Rights Reserved.
+</div>
+
+</div><!-- body -->
+</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var firstTracker = _gat._getTracker("UA-441387-2");
+firstTracker._initData();
+firstTracker._trackPageview();
+var secondTracker = _gat._getTracker("UA-7855606-1");
+secondTracker._setDomainName(".hatena.ne.jp");
+secondTracker._initData();
+secondTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

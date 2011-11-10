@@ -1,0 +1,33 @@
+=head1 NAME
+
+HTTest::Mock::Hatena::Star::UserFriends - HTTest mock module for Hatena Star Friend JSON API
+
+=head1 SYNOPSIS
+
+  use HTTest::Mock::Hatena::Star::UserFriends;
+  $HTTest::Mock::Hatena::Star::UserFriends::Friends->{'fromuserhatenaid'} = [
+      # Expected response of the API
+      {name => 'touserhatenaid1'},
+      {name => 'touserhatenaid2'},
+  ];
+
+  use HTTest::Mock;
+  LWP::Simple->get('http://s.hatena.com/fromuserhatenaid/friends.json');
+
+=head1 DESCRIPTION
+
+The C<HTTest::Mock::Hatena::Star::UserFriends> module provides a mock
+server definition for the Hatena Star Friends JSON API.
+
+=head1 AUTHOR
+
+Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>
+
+=head1 LICENSE
+
+Copyright 2010 Hatena <http://www.hatena.ne.jp/>.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut

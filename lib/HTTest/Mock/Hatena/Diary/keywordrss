@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns="http://purl.org/rss/1.0/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:hatena="http://www.hatena.ne.jp/info/xmlns#"
+	xml:lang="ja">
+	<channel rdf:about="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE">
+		<title>はてなダイアリー - 東京とは</title>
+		<link>http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE</link>
+		<description>はてなダイアリー - 東京</description>
+		
+		<items>
+		<rdf:Seq>
+
+		    <rdf:li rdf:resource="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=879"/>
+
+		    <rdf:li rdf:resource="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=100367"/>
+
+		    <rdf:li rdf:resource="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=76932"/>
+
+        </rdf:Seq>
+		</items>
+		
+	</channel>
+
+	<item rdf:about="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=879">
+	    <title>東京</title>
+		<link>http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=879</link>
+		<description>  「東京都」として  東方にある都の意。 日本国の首都だと言われる。 1868年（慶應4年7月）江戸を東京と改称。 都庁：東京都新宿区西新宿2-8-1 人口：約1,246万人 面積：2,187.05km2 特別区 千代田区、中央区、港区、新宿区、文京区 台東区、墨田区、江東区、品川区、目黒区 大田区、世田谷区、渋谷区、中野区、杉並区 豊島区、北区、荒川区、板橋区、練馬区 足立区、葛飾区、江戸川区   多摩地区 八王子市、立川市、武蔵野市、三鷹市、府中市 昭島市、調布市、小金井市、町田市、日野市 国分寺市 ...</description>
+		<content:encoded><![CDATA[
+		<div class="section">
+			<h3 class="title"><a href="/keyword/%C5%EC%B5%FE?kid=879#p1" name="p1">「東京都」として</a></h3>			<p class="sectionheader"></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%CA%FD">東方</a>にある都の意。</p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%FC%CB%DC%B9%F1">日本国</a>の首都だと言われる。</p>
+			<p>1868年（慶應4年7月）江戸を東京と改称。</p>
+			<p>都庁：東京都新宿区西新宿2-8-1</p>
+			<p>人口：約1,246万人</p>
+			<p>面積：2,187.05km<sup>2</sup></p>
+			<h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%C3%CA%CC%B6%E8">特別区</a></h4>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%E9%C2%E5%C5%C4%B6%E8">千代田区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%E6%B1%FB%B6%E8">中央区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%C1%B6%E8">港区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%B7%BD%C9%B6%E8">新宿区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CA%B8%B5%FE%B6%E8">文京区</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%E6%C5%EC%B6%E8">台東区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CB%CF%C5%C4%B6%E8">墨田区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%BE%C5%EC%B6%E8">江東区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%CA%C0%EE%B6%E8">品川区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CC%DC%B9%F5%B6%E8">目黒区</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%E7%C5%C4%B6%E8">大田区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%A4%C5%C4%C3%AB%B6%E8">世田谷区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BD%C2%C3%AB%B6%E8">渋谷区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%E6%CC%EE%B6%E8">中野区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%F9%CA%C2%B6%E8">杉並区</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%CB%AD%C5%E7%B6%E8">豊島区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CB%CC%B6%E8">北区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%D3%C0%EE%B6%E8">荒川区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%C4%B6%B6%B6%E8">板橋区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CE%FD%C7%CF%B6%E8">練馬区</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%AD%CE%A9%B6%E8">足立区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B3%EB%BE%FE%B6%E8">葛飾区</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%BE%B8%CD%C0%EE%B6%E8">江戸川区</a></p>
+			<p> </p>
+			<h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%BF%CB%E0%C3%CF%B6%E8">多摩地区</a></h4>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%AC%B2%A6%BB%D2%BB%D4">八王子市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CE%A9%C0%EE%BB%D4">立川市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%F0%C2%A2%CC%EE%BB%D4">武蔵野市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%B0%C2%EB%BB%D4">三鷹市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%DC%C3%E6%BB%D4">府中市</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%BC%C5%E7%BB%D4">昭島市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%B4%C9%DB%BB%D4">調布市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%B6%E2%B0%E6%BB%D4">小金井市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%AE%C5%C4%BB%D4">町田市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%FC%CC%EE%BB%D4">日野市</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%F1%CA%AC%BB%FB%BB%D4">国分寺市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%F1%CE%A9%BB%D4">国立市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%FD%B9%BE%BB%D4">狛江市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%C2%E7%CF%C2%BB%D4">東大和市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%F0%C2%A2%C2%BC%BB%B3%BB%D4">武蔵村山市</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%BF%CB%E0%BB%D4">多摩市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B0%F0%BE%EB%BB%D4">稲城市</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%CA%BF%BB%D4">小平市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%C2%BC%BB%B3%BB%D4">東村山市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%BE%C5%EC%B5%FE%BB%D4">西東京市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%B6%C0%A5%BB%D4">清瀬市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%B5%D7%CE%B1%CA%C6%BB%D4">東久留米市</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%C4%C7%DF%BB%D4">青梅市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CA%A1%C0%B8%BB%D4">福生市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%A9%C2%BC%BB%D4">羽村市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%A2%A4%AD%A4%EB%CC%EE%BB%D4">あきる野市</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%F0%CA%E6%C4%AE">瑞穂町</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%FC%A4%CE%BD%D0%C4%AE">日の出町</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%DB%D8%B8%B6%C2%BC">檜原村</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%FC%C2%BF%CB%E0%C4%AE">奥多摩町</a></p>
+			<h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%E7%D6%D9">島嶼</a></h4>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%E7%C5%E7%C4%AE">大島町</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%AC%BE%E6%C4%AE">八丈町</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CD%F8%C5%E7%C2%BC">利島村</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%B7%C5%E7%C2%BC">新島村</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%C0%C4%C5%C5%E7%C2%BC">神津島村</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%B0%C2%F0%C2%BC">三宅村</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%E6%C2%A2%C5%E7%C2%BC">御蔵島村</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%C4%A5%F6%C5%E7%C2%BC">青ヶ島村</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%B3%DE%B8%B6%C2%BC">小笠原村</a></p>
+			<br>
+
+		</div>
+
+		<div class="section">
+			<h3 class="title"><a href="/keyword/%C5%EC%B5%FE?kid=879#p2" name="p2">
+「他地方から見た関東地方」として</a></h3>			<p class="sectionheader"></p>
+			<p>「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CA%A1%B0%E6">福井</a>から東京に引っ越した」とか「東京は怖いところだべさ」などというのは、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE%B1%D8">東京駅</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE%C5%D4">東京都</a>のことだけを指すのではなく、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%C0%C6%E0%C0%EE">神奈川</a>だって千葉だって<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%EB%B6%CC">埼玉</a>だって「東京」というひとつの括りでいわれる。</p>
+			<p>ただ、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%F0%C2%A2%CC%EE%C0%FE">武蔵野線</a>より内側を重点的に東京と呼んでも間違いではないと思う。</p>
+			<br>
+
+		</div>
+
+		<div class="section">
+			<h3 class="title"><a href="/keyword/%C5%EC%B5%FE?kid=879#p3" name="p3">
+歌のタイトルとして</a></h3>			<p class="sectionheader"></p>
+			<p>→<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A1%D6%C5%EC%B5%FE%A1%D7">「東京」</a></p>
+			<br>
+
+		</div>
+
+		<div class="section">
+			<h3 class="title"><a href="/keyword/%C5%EC%B5%FE?kid=879#p4" name="p4">
+「東京駅」として</a></h3>			<p class="sectionheader"></p>
+			<p><b>→</b>　「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE%B1%D8">東京駅</a>」を参照のこと。</p>
+			<br>
+
+			<p>関連語：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%F3%CA%B8%BB%FA%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9">二文字キーワード</a></p>
+		</div>
+]]></content:encoded>
+		<dc:date>2008-07-18T21:54:40+09:00</dc:date>
+		<dc:subject>地理</dc:subject>
+		<hatena:score>20</hatena:score>
+		<hatena:contentscore>33</hatena:contentscore>
+		<hatena:furigana>とうきょう</hatena:furigana>
+
+		<hatena:imageurl>http://d.hatena.ne.jp/images/keyword/879.jpg</hatena:imageurl>
+		<hatena:imageurlsmall>http://d.hatena.ne.jp/images/keyword/879_m.gif</hatena:imageurlsmall>
+
+	</item>
+
+	<item rdf:about="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=100367">
+	    <title>東京</title>
+		<link>http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=100367</link>
+		<description>  FC東京  Jリーグ報道において「東京」となっている場合は、FC東京を指す。*1 また、サポーターも通常は「東京」を使用することが多い。 ただし、totoなどにおいては東京ヴェルディとの混同を避けるため「F東京」と表現する。    東京アパッチ  プロバスケットボールbjリーグの東京アパッチ。   *1：日刊スポーツでは「東京」と記している。  </description>
+		<content:encoded><![CDATA[
+		<div class="section">
+			<h3 class="title"><a href="/keyword/%C5%EC%B5%FE?kid=100367#p1" name="p1">FC東京</a></h3>			<p class="sectionheader"></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/J%A5%EA%A1%BC%A5%B0">Jリーグ</a>報道において「東京」となっている場合は、<a class="keyword" href="http://d.hatena.ne.jp/keyword/FC%C5%EC%B5%FE">FC東京</a>を指す。<span class="footnote"><a href="/keyword/%C5%EC%B5%FE?kid=100367#f1" name="fn1" title="日刊スポーツでは「[]東京[]」と記している。">*1</a></span></p>
+			<p>また、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B5%A5%DD%A1%BC%A5%BF%A1%BC">サポーター</a>も通常は「東京」を使用することが多い。</p>
+			<p>ただし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/toto">toto</a>などにおいては<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE%A5%F4%A5%A7%A5%EB%A5%C7%A5%A3">東京ヴェルディ</a>との混同を避けるため「<a class="keyword" href="http://d.hatena.ne.jp/keyword/F%C5%EC%B5%FE">F東京</a>」と表現する。</p>
+		</div>
+
+		<div class="section">
+			<h3 class="title"><a href="/keyword/%C5%EC%B5%FE?kid=100367#p2" name="p2">
+東京アパッチ</a></h3>			<p class="sectionheader"></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%D0%A5%B9%A5%B1%A5%C3%A5%C8%A5%DC%A1%BC%A5%EB">プロバスケットボール</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/bj%A5%EA%A1%BC%A5%B0">bjリーグ</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE%A5%A2%A5%D1%A5%C3%A5%C1">東京アパッチ</a>。</p>
+		</div>
+		<div class="footnote">
+			<p class="footnote"><a href="/keyword/%C5%EC%B5%FE?kid=100367#fn1" name="f1">*1</a>：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%FC%B4%A9%A5%B9%A5%DD%A1%BC%A5%C4">日刊スポーツ</a>では「東京」と記している。</p>
+		</div>
+]]></content:encoded>
+		<dc:date>2007-12-31T00:08:22+09:00</dc:date>
+		<dc:subject>スポーツ</dc:subject>
+		<hatena:score>20</hatena:score>
+		<hatena:contentscore>0</hatena:contentscore>
+		<hatena:furigana>とうきょう</hatena:furigana>
+
+	</item>
+
+	<item rdf:about="http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=76932">
+	    <title>東京</title>
+		<link>http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE?kid=76932</link>
+		<description>  リスト::日本人の苗字 日本の苗字。現在、稀少。    データ   現在、大阪府岸和田市に存す。   </description>
+		<content:encoded><![CDATA[
+		<div class="section">
+			<p>リスト::日本人の苗字</p>
+			<p>日本の苗字。現在、稀少。</p>
+		</div>
+
+		<div class="section">
+			<h3 class="title"><a href="/keyword/%C5%EC%B5%FE?kid=76932#p1" name="p1">
+データ</a></h3>			<p class="sectionheader"></p>
+			<blockquote>
+			<p>現在、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%E7%BA%E5%C9%DC">大阪府</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%DF%CF%C2%C5%C4">岸和田</a>市に存す。</p>
+			</blockquote>
+		</div>
+]]></content:encoded>
+		<dc:date>2004-12-28T20:27:06+09:00</dc:date>
+		<dc:subject>一般</dc:subject>
+		<hatena:score>20</hatena:score>
+		<hatena:contentscore>33</hatena:contentscore>
+		<hatena:furigana>とうきょう</hatena:furigana>
+
+	</item>
+
+</rdf:RDF>

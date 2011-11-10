@@ -1,0 +1,6 @@
+<root xmlns="">
+  <title>This is not an HTML title element.</title>
+  <p>これは HTML の段落ではありません。</p>
+  <hr/>
+  <p>XML???</p>
+</root>
