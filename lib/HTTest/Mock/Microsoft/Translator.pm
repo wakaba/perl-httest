@@ -8,7 +8,7 @@ HTTest::Mock::Server->add_handler(qr<\Qhttp://api.microsofttranslator.com/V2/Aja
     my ($server, $req, $res) = @_;
     $res->content_type('application/x-javascript');
     $res->code(200);
-    $res->content( '"This is the HTTP responses with Mock. モックからのHTTPレスポンスです."' );
+    $res->content( '"_This is the HTTP responses with Mock. モックからのHTTPレスポンスです."' );
 });
 
 1;
