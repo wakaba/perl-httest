@@ -1,14 +1,16 @@
 package HTTest::Mock::Microsoft::Translator;
 use strict;
 use warnings;
+use utf8;
 our $VERSION = '1.0';
 use HTTest::Mock::Server;
+use Encode;
 
 HTTest::Mock::Server->add_handler(qr<\Qhttp://api.microsofttranslator.com/V2/Ajax.svc/Translate\E>, sub {
     my ($server, $req, $res) = @_;
     $res->content_type('application/x-javascript');
     $res->code(200);
-    $res->content( '"_This is the HTTP responses with Mock. モックからのHTTPレスポンスです."' );
+    $res->content( encode 'utf-8', '\x{FEFF}"_This is the HTTP responses with Mock. モックからのHTTPレスポンスです."' );
 });
 
 1;
