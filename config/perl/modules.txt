@@ -1,0 +1,9 @@
+Carp
+Class::Data::Inheritable
+Encode
+Exporter::Lite
+JSON::XS
+LWP::UserAgent
+List::Rubyish
+Path::Class
+UNIVERSAL::require
