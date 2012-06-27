@@ -1,16 +1,17 @@
 package HTTest::Response;
 use strict;
 use warnings;
-our $VERSION = '1.0';
-use base qw(Test::MoreMore::Mock);
+our $VERSION = '2.0';
 use Encode;
 
-sub new { my ($class, @args) = @_; if (@args && $args[0] && $args[0] =~ m/^\d{3}$/) {
+sub new {
+    my ($class, @args) = @_;
+    if (@args && $args[0] && $args[0] =~ m/^[0-9]{3}$/) {
         # XXX doesn't support specifying headers
         my @names = qw/code message _headers content/;
         @args = map { shift @names => $_ } @args;
     }
-    $class->SUPER::new(@args);
+    return bless {@args}, $class;
 }
 
 sub isa {
@@ -20,6 +21,23 @@ sub isa {
         return 1;
     } else {
         $class->SUPER::isa(@_);
+    }
+}
+
+sub AUTOLOAD {
+    if (our $AUTOLOAD =~ /([^:]+)$/) {
+        no strict 'refs';
+        my $name = $1;
+        *$AUTOLOAD = sub {
+            my $self = shift;
+            if (@_) {
+                $self->{$name} = shift;
+            }
+            return $self->{$name};
+        };
+        goto &$AUTOLOAD;
+    } else {
+        die "AUTOLOAD: no $AUTOLOAD";
     }
 }
 
