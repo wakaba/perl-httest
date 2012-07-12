@@ -1,0 +1,3 @@
+git://github.com/wakaba/perl-web-useragent-functions
+git://github.com/wakaba/perl-web-utils
+git://github.com/wakaba/perl-json-functions-xs
