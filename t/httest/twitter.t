@@ -58,14 +58,36 @@ sub _account_not_found : Test(1) {
     };
 }
 
-sub _followers : Test(5) {
+sub _followers : Test(1) {
     my $twitter = HTTest::Twitter->new;
-    my $return = $twitter->followers;
-    is ref $return, 'ARRAY';
-    is scalar @$return, 3;
-    is $return->[0]->{screen_name}, 'hakobe';
-    is $return->[1]->{screen_name}, 'hakobemodoki1';
-    is $return->[2]->{screen_name}, 'hakobemodoki2';
+    dies_ok { $twitter->followers }
+}
+
+sub _following : Test(1) {
+    my $twitter = HTTest::Twitter->new;
+    dies_ok { $twitter->following }
+}
+
+sub _following_ids : Test(6) {
+    my $twitter = HTTest::Twitter->new;
+    my $return = $twitter->following_ids;
+    is ref $return, 'HASH';
+    is $return->{previous_cursor}, 0;
+    is $return->{previous_cursor_str}, '0';
+    is $return->{next_cursor}, 0;
+    is $return->{next_cursor_str}, '0';
+    is_deeply $return->{ids}, [143206502, 143201767, 777925];
+}
+
+sub _followers_ids : Test(6) {
+    my $twitter = HTTest::Twitter->new;
+    my $return = $twitter->followers_ids;
+    is ref $return, 'HASH';
+    is $return->{previous_cursor}, 0;
+    is $return->{previous_cursor_str}, '0';
+    is $return->{next_cursor}, 0;
+    is $return->{next_cursor_str}, '0';
+    is_deeply $return->{ids}, [570143878, 569940541, 317955476];
 }
 
 sub _update : Test(1) {

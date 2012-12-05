@@ -11,7 +11,6 @@ use Encode;
 sub _isa : Test(6) {
     for (
         'HTTest::Response',
-        'Test::MoreMore::Mock',
         'HTTP::Response',
         'HASH',
     ) {
@@ -22,6 +21,7 @@ sub _isa : Test(6) {
     for (
         'HTTP::Request',
         'Ridge::Response',
+        'Test::MoreMore::Mock',
     ) {
         my $res = HTTest::Response->new;
         ng $res->isa($_);

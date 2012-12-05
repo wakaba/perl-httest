@@ -1,8 +1,8 @@
 package HTTest::Mock::Server;
 use strict;
 use warnings;
-our $VERSION = '1.0';
-use base qw(Test::MoreMore::Mock);
+our $VERSION = '2.0';
+use base qw(Class::Data::Inheritable);
 use UNIVERSAL::require;
 use HTTest::Response;
 use List::Rubyish;
