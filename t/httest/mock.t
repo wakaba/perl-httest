@@ -2,11 +2,13 @@ package test::HTTest::Mock;
 use strict;
 use warnings;
 use Path::Class;
+use File::Temp qw( tempfile );
 use lib file(__FILE__)->dir->parent->parent->subdir('lib')->stringify;
 use lib glob file(__FILE__)->dir->parent->parent->parent->subdir('*', 'lib')->stringify;
 use base qw(Test::Class);
 use Test::MoreMore;
 use Web::UserAgent::Functions qw/http_get http_post_data/;
+use LWP::UserAgent;
 use HTTest::Mock;
 use HTTest::Mock::Server;
 
@@ -152,6 +154,30 @@ sub _response_class : Test(4) {
     HTTest::Mock::Server->response_class('HTTest::Response');
     my ($req3, $res3) = http_get url => q<http://example.org/3rd>;
     isa_ok $res3, 'HTTest::Response';
+}
+
+sub _support_content_file_option : Test(2) {
+    my $simple_text_str = 'this is simple text!';
+    HTTest::Mock::Server->add_handler(qr[//example\.org/simple_text\.txt] => sub {
+        my ($server, $req, $res) = @_;
+        $res->content_type('text/html; charset=utf-8');
+        $res->content($simple_text_str);
+    });
+
+    my (undef, $filename) = tempfile('Test_of_HTTest_XXXXXXXXXX', OPEN => 0);
+
+    my $ua = LWP::UserAgent->new();
+    my $res = $ua->get(
+        'http://example.org/simple_text.txt',
+        ':content_file' => $filename,
+    );
+
+    open(my $fh, '<', $filename);
+    is do { local $/; <$fh> }, $simple_text_str, 'content_file option is supported';
+    is $res->content, '', 'content_file option being used, res->content is empty string';
+    close($fh);
+
+    unlink $filename;
 }
 
 __PACKAGE__->runtests;
