@@ -91,7 +91,8 @@ sub _json : Test(4) {
     is $res->content_type, 'application/json';
     is $res->content, '{
    "value" : "abcdefg"
-}';
+}
+';
 }
 
 sub _response_header : Test(2) {
