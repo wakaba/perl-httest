@@ -3,7 +3,6 @@ use strict;
 use warnings;
 our $VERSION = '2.0';
 use base qw(Class::Data::Inheritable);
-use UNIVERSAL::require;
 use HTTest::Response;
 use List::Rubyish;
 use Encode;
@@ -17,8 +16,9 @@ __PACKAGE__->mk_classdata(response_class => 'HTTest::Response');
 sub request {
     my ($class, $req) = @_;
 
-    __PACKAGE__->response_class->require or die $@;
-    my $res = __PACKAGE__->response_class->new(200, 'OK');
+    my $res_class = __PACKAGE__->response_class;
+    eval qq{ require $res_class } or die $@;
+    my $res = $res_class->new(200, 'OK');
     my $url = $req->uri;
 
     $res->request($req);

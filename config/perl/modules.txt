@@ -6,4 +6,3 @@ JSON::XS
 LWP::UserAgent
 List::Rubyish
 Path::Class
-UNIVERSAL::require
