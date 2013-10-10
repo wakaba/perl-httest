@@ -2,7 +2,6 @@ package HTTest::Mock::Server;
 use strict;
 use warnings;
 our $VERSION = '2.0';
-use base qw(Class::Data::Inheritable);
 use HTTest::Response;
 use List::Rubyish;
 use Encode;
@@ -11,7 +10,15 @@ our $DEBUG ||= $ENV{HTTEST_DEBUG};
 
 our $Handlers = List::Rubyish->new;
 
-__PACKAGE__->mk_classdata(response_class => 'HTTest::Response');
+our $ResponseClass = 'HTTest::Response';
+
+# backcompat
+sub response_class {
+    if (@_ > 1) {
+        $ResponseClass = $_[1];
+    }
+    return $ResponseClass;
+}
 
 sub request {
     my ($class, $req) = @_;

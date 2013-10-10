@@ -67,7 +67,6 @@ Test::Fatal~0.010
 Data::Dumper~2.131
 ExtUtils::ParseXS~3.15
 IO::Socket::SSL~1.76
-Class::Data::Inheritable~0.08
 Test::Requires~0.06
 Algorithm::Diff~1.1902
 List::Rubyish~0.03

@@ -1,5 +1,4 @@
 Carp
-Class::Data::Inheritable
 Encode
 Exporter::Lite
 JSON::XS
