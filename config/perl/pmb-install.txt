@@ -7,6 +7,7 @@ Test::Exception~0.31
 Test::Output~1.01
 Class::ErrorHandler~0.01
 Class::Data::Accessor~0.04004
+Class::Data::Inheritable
 Sub::Uplevel~0.24
 Encode~2.44
 Class::Load~0.19
